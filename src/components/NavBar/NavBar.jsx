@@ -3,14 +3,17 @@ import { MenuMobile, NavBarElement } from './NavBarElement';
 import { Logo } from './Logo';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from 'react';
+import { blanco, negro, rojoClaro } from '../../assets/colors/Colors';
 
 
 export const NavBarContainer = styled.div`
   width: 100%;
   height: 80px;
-  position: sticky;
-  top: 0;
+  padding-right: 12px;
+  position: fixed;
+  top: 30px;
   z-index: 2;
+  background-color: ${blanco};
 `
 export const NavBarWrapper = styled.div`
   margin: auto;
@@ -19,8 +22,9 @@ export const NavBarWrapper = styled.div`
   height: 100%;
   align-items: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 `
 export const NavElementContainer = styled.div`
   height: 100%;
@@ -35,7 +39,7 @@ export const NavElementContainer = styled.div`
     left: ${ ({isClicked}) => isClicked ? 0 : '-100%' };
     flex-direction: column;
     transition: 0.5s all ease-in;
-    background-color: rgba(235, 200, 139, 0.8) ;
+    background-color: ${negro};
     padding-right: 1rem;
   }
 `
@@ -45,13 +49,20 @@ export const IconLogo = styled.div`
   justify-content: flex-start;
   align-items: center;
   font-size: 1.2rem;
-  color: #ebc88b;
-
-  @media screen and (max-width: 960px) {
+  width: 50%;
+  
+  @media screen and (min-width: 320px) and (max-width: 490px) {
     padding-left: 1rem;
+    width: 90%;
     h1{
       font-size: 0.9rem;
     }
+  }
+  @media screen and (min-width: 491px) and (max-width: 719px) {
+    width: 60%;
+  }
+  @media screen and (min-width: 720) and (max-width: 960px) {
+    width: 50%;
   }
 `
 export const Hamburguer = styled(FaBars)`
@@ -69,7 +80,7 @@ export const NavBar = () => {
     <>
       <NavBarContainer>
         <NavBarWrapper>
-          <IconLogo><Logo /><h1>Kiautos del sur</h1></IconLogo>
+          <IconLogo><Logo /></IconLogo>
           <MenuMobile onClick={ ()=>{ changeClick() } } >
             { click ? <FaTimes /> : <FaBars /> } 
           </MenuMobile>

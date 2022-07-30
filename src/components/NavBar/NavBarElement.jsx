@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import  styled  from 'styled-components'
+import { blanco, negro, rojoClaro, rojoOscuro } from '../../assets/colors/Colors'
 
 
   
@@ -9,15 +10,14 @@ import  styled  from 'styled-components'
 export const NavElement = styled(NavLink)`
   padding: 15px;
   text-decoration: none;
-  color: white;
+  color: ${negro};
   font-weight: 400;
   &:hover{
-    border-bottom: 0.3rem solid #ebc88b;
+    border-bottom: 0.3rem solid ${rojoClaro};
   }
 
   @media screen and (max-width: 960px) {
     text-align: center;
-    
   }
 
   
@@ -27,7 +27,7 @@ export const MenuMobile = styled.div`
 
   @media screen and (max-width: 960px) {
     display: flex;
-    color: #ebc88b;
+    color: ${negro};
     font-size: 2rem;
     
   }
