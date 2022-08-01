@@ -10,7 +10,7 @@ const LogoStyled = styled.img`
   }
 `
 
-export const Logo = () => {
+export const Logo = () => { 
   return (
     <LogoStyled src={logo}></LogoStyled>
   )

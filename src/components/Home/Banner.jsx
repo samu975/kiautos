@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import Typewriter from 'typewriter-effect';
-import { gris, negro, rojoClaro, rojoOscuro, rosado } from "../../assets/colors/Colors";
+import { blanco, gris, negro, rojoClaro, rojoOscuro, rosado } from "../../assets/colors/Colors";
 import video from "../../assets/video/video-banner.mp4"
 
 export const VideoBannerContainer = styled.section`
@@ -30,13 +30,16 @@ const TypewriterContainer = styled.div`
     align-items: center;
     z-index: 1;
     .Typewriter{
-        @import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
-        font-family: 'Uchen', serif;
+        font-family: 'Bebas Neue';
+        padding-top: 40px;
+        height: 100px;
+        background-color: rgba(0,0,0,0.9);
         span{
             width: 100%;
+            text-transform:uppercase; 
             font-size: 40px;
             font-weight: 800;
-            color: ${rojoOscuro};
+            color: ${blanco};
         }
         
     }
@@ -52,6 +55,22 @@ const TypewriterContainer = styled.div`
     
 `
 
+const ButtonDiv = styled.div `
+    width: 100%;
+    grid-row: 7/7;
+    display: flex;
+    justify-content: center;
+    
+`
+const CotizarButton = styled.button `
+    width: 150px;
+    height: 40px;
+    background-color: ${rojoOscuro};
+    border: 1px solid ${rojoOscuro};
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+`
 
 
 export const Banner = () => {
@@ -73,7 +92,9 @@ export const Banner = () => {
             }}
         />
             </TypewriterContainer>
-            
+            <ButtonDiv>
+                <CotizarButton>Cotizar Ahora</CotizarButton>
+            </ButtonDiv>
         </VideoBannerContainer>
     </>
   )

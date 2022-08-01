@@ -23,6 +23,7 @@ const TarjetaContainer = styled.section`
         margin: 30px;
         padding: 20px;
         box-shadow: 5px 5px 5px black;
+        background-color: white;
     }
 
 `
@@ -36,8 +37,10 @@ const TopContainer = styled.section`
 `
 const Titulo = styled.h1`
     width: 70%;
+    font-size: 20px;
     padding-left: 0;
-    color: ${negro};
+    color: ${rojoOscuro};
+    text-transform: uppercase;
     @media screen and (min-width: 1020px) {
         
     }

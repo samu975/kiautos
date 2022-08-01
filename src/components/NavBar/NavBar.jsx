@@ -25,12 +25,14 @@ export const NavBarWrapper = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  
 `
 export const NavElementContainer = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  
   @media screen and (max-width: 960px) {
     width: 100%;
     height: 98vh;
@@ -41,6 +43,7 @@ export const NavElementContainer = styled.div`
     transition: 0.5s all ease-in;
     background-color: ${negro};
     padding-right: 1rem;
+    z-index: 5;
   }
 `
 export const IconLogo = styled.div`

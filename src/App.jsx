@@ -12,6 +12,8 @@ import { ServicesPage } from './pages/ServicesPage'
 import { ContactPage } from './pages/ContactPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { Header } from './components/Header'
+import WppButton from './components/WppButton'
+import Footer from './components/Footer'
 
 function App() {
   
@@ -28,6 +30,8 @@ function App() {
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/*' element={<NotFoundPage />} />
         </Routes>
+        <WppButton />
+        <Footer />
       </BrowserRouter>
     </>
   )
