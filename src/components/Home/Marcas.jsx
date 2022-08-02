@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { rojoClaro, rojoOscuro } from '../../assets/colors/Colors'
 import MarcaElement from './MarcaElement'
-import logoKia from '../../assets/marcas/kia.png'
 import logoHyundai from '../../assets/marcas/hyundai.png'
 import logoChevrolet from '../../assets/marcas/chevrolet.png'
 const MarcasContainer = styled.section `
