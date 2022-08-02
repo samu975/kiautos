@@ -11,9 +11,12 @@ export const NavBarContainer = styled.div`
   height: 80px;
   padding-right: 12px;
   position: fixed;
-  top: 30px;
+  top: 80px;
   z-index: 2;
   background-color: ${blanco};
+  @media screen and (min-width: 700px) {
+      top: 32px;
+    }
 `
 export const NavBarWrapper = styled.div`
   margin: auto;

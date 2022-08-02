@@ -18,6 +18,7 @@ export const NavElement = styled(NavLink)`
 
   @media screen and (max-width: 960px) {
     text-align: center;
+    color: ${blanco};
   }
 
   

@@ -35,7 +35,7 @@ const WppIcon = styled(FaWhatsapp)`
 const WppButton = () => {
   return (
     <>
-        <WppContainer href='' target='_blank'>
+        <WppContainer href='https://wa.me/message/X5C6UE5XOAC4O1?src=qr' target='_blank'>
             <WppIcon />
         </WppContainer>
     </>

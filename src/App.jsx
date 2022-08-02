@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header initTime='8:00 AM' finishTime='6:00 PM' />
+        <Header initTime='8:00 AM' finishTime='5:00 PM' />
         <NavBar />
         <Routes>
           <Route path='/' element={<HomePage />} />

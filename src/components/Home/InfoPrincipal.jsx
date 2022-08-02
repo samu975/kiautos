@@ -48,9 +48,9 @@ const Titulo = styled.h1`
 const Texto = styled.p`
     padding: 0 20px;
     margin-top: 20px;
-    color: ${gris};
+    color: ${blanco};
     @media screen and (min-width: 1020px) {
-        
+        color: ${gris};
     }
 `
 const IconContainer = styled.div`
@@ -82,7 +82,7 @@ const InfoPrincipal = () => {
                 <Titulo>Distrubuidores de repuestos y lavado de autos </Titulo>
             </TopContainer>
             <Texto>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit, neque et semper scelerisque, arcu dui tempor tellus, ut aliquam arcu ante ut magna. Quisque tempus justo nec nisi ultrices tristique quis vitae orci. Suspendisse vel posuere sapien. Aenean ac purus et dolor accumsan commodo non sed tortor. Nullam at ullamcorper eros. Fusce vehicula magna quis risus ornare, vel hendrerit leo molestie. Aenean odio massa, iaculis nec varius at, varius quis ligula. In in laoreet justo. Pellentesque erat eros, imperdiet non leo nec, tempus dictum orci. Donec in lobortis purus. Donec vestibulum fermentum faucibus.
+            Somos comercializadores de partes para vehículos Hyundai,Kia y Chevrolet,contando com un equipo de trabajo altamente capacitado para brindarte la mejor experiencia. Nos dedicábamos a la comercialización de partes automotrices para vehículos livianos
             </Texto>
             </TarjetaContainer>
         </SectionContainer>

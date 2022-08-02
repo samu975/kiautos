@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
     padding: 5px 5px;
     position: fixed;
     width: 100%;
+    height: auto;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -17,12 +18,22 @@ export const HeaderContainer = styled.div`
         margin-left: 7px;
         font-size: 0.9rem;
     }
+    @media screen and (min-width: 700px) {
+      br{
+        display: none;
+      }
+    }
 `
 
 export const Header = ({initTime, finishTime}) => {
   return (
     <>
-        <HeaderContainer><FaRegClock /><h2>Horario de Atención de: {initTime}-{finishTime}</h2></HeaderContainer>
+        <HeaderContainer>
+          <FaRegClock />
+          <div>
+            <h2>Horario de Atenció:  <br /> lunes a viernes de: {initTime}-{finishTime}.<br />    Sabados de: 8 AM - 2PM</h2>
+          </div>
+          </HeaderContainer>
     </>
   )
 }
