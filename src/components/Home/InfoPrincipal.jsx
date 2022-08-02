@@ -79,10 +79,10 @@ const InfoPrincipal = () => {
                     <Icon />
                 </IconContainer>
                
-                <Titulo>Distrubuidores de repuestos y lavado de autos </Titulo>
+                <Titulo>Distrubuidores de repuestos</Titulo>
             </TopContainer>
             <Texto>
-            Somos comercializadores de partes para vehículos Hyundai,Kia y Chevrolet,contando com un equipo de trabajo altamente capacitado para brindarte la mejor experiencia. Nos dedicábamos a la comercialización de partes automotrices para vehículos livianos
+            Somos comercializadores de partes para vehículos Hyundai,Kia y Chevrolet,contando con un equipo de trabajo altamente capacitado para brindarte la mejor experiencia. Nos dedicábamos a la comercialización de partes automotrices para vehículos livianos
             </Texto>
             </TarjetaContainer>
         </SectionContainer>
