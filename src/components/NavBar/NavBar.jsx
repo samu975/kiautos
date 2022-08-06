@@ -1,9 +1,12 @@
 import styled from 'styled-components'
-import { MenuMobile, NavBarElement } from './NavBarElement';
 import { Logo } from './Logo';
 import { FaBars, FaTimes } from "react-icons/fa";
+import { HashLink as Link } from 'react-router-hash-link'
 import { useState } from 'react';
 import { blanco, negro, rojoClaro } from '../../assets/colors/Colors';
+
+
+
 
 
 export const NavBarContainer = styled.div`
@@ -49,6 +52,34 @@ export const NavElementContainer = styled.div`
     z-index: 5;
   }
 `
+export const NavElement = styled(Link)`
+  padding: 15px;
+  text-decoration: none;
+  color: ${negro};
+  font-weight: 400;
+  &:hover{
+    border-bottom: 0.3rem solid ${rojoClaro};
+  }
+
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    color: ${blanco};
+  }
+
+  
+`
+export const MenuMobile = styled.div`
+  display: none;
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    color: ${negro};
+    font-size: 2rem;
+    
+  }
+
+`
+
 export const IconLogo = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -84,17 +115,17 @@ export const NavBar = () => {
 
   return (
     <>
-      <NavBarContainer>
+      <NavBarContainer className='navBarContainer'>
         <NavBarWrapper>
           <IconLogo><Logo /></IconLogo>
           <MenuMobile onClick={ ()=>{ changeClick() } } >
             { click ? <FaTimes /> : <FaBars /> } 
           </MenuMobile>
           <NavElementContainer isClicked={click} onClick={()=>{ changeClick() }}>
-            <NavBarElement  url="/" name="Inicio"></NavBarElement>
-            <NavBarElement url="/about" name="Nosotros"></NavBarElement>
-            <NavBarElement url='/services' name="Servicios"></NavBarElement>
-            <NavBarElement url='/contact' name="Contacto"></NavBarElement>
+            <NavElement smooth  to="/#top" name="Inicio">Home</NavElement>
+            <NavElement smooth to="/#nosotros" name="Nosotros">Nosotros</NavElement>
+            <NavElement smooth to='/#servicios' name="Servicios">Servicios</NavElement>
+            <NavElement smooth to='/#contacto' name="Contacto">Contacto</NavElement>
           </NavElementContainer>
         </NavBarWrapper>
       </NavBarContainer>

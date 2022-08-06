@@ -15,7 +15,7 @@ const MarcasContainer = styled.section `
 const MarcasTitulo = styled.h2 `
     color: ${rojoOscuro};
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 22px;
     
 `
 const ElementsContainer = styled.div `

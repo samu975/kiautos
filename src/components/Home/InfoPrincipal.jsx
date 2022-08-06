@@ -27,6 +27,7 @@ const TarjetaContainer = styled.section`
     }
 
 `
+
 const TopContainer = styled.section`
     width: 100%;
     display: flex;
@@ -37,7 +38,7 @@ const TopContainer = styled.section`
 `
 const Titulo = styled.h1`
     width: 70%;
-    font-size: 20px;
+    font-size: 22px;
     padding-left: 0;
     color: ${rojoOscuro};
     text-transform: uppercase;
@@ -49,6 +50,8 @@ const Texto = styled.p`
     padding: 0 20px;
     margin-top: 20px;
     color: ${blanco};
+    font-size: 18px;
+    line-height: 1.5;
     @media screen and (min-width: 1020px) {
         color: ${gris};
     }
@@ -72,7 +75,7 @@ const Icon = styled(FaTools)`
 
 const InfoPrincipal = () => {
   return (
-    <>  <SectionContainer>
+    <>  <SectionContainer id='nosotros'>
             <TarjetaContainer>
             <TopContainer>
                 <IconContainer>
@@ -82,7 +85,7 @@ const InfoPrincipal = () => {
                 <Titulo>Distrubuidores de repuestos</Titulo>
             </TopContainer>
             <Texto>
-            Somos comercializadores de partes para vehículos Hyundai,Kia y Chevrolet,contando con un equipo de trabajo altamente capacitado para brindarte la mejor experiencia. Nos dedicábamos a la comercialización de partes automotrices para vehículos livianos
+            Somos comercializadores de partes para vehículos Hyundai, Kia y Chevrolet. Contamos con un equipo de trabajo altamente capacitado para brindarte la mejor experiencia. Nos dedicamos a la comercialización de partes automotrices para vehículos livianos.
             </Texto>
             </TarjetaContainer>
         </SectionContainer>

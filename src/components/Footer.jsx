@@ -53,11 +53,11 @@ const IconLink = styled.a`
 const Footer = () => {
   return (
     <>
-        <FooterContainer>
+        <FooterContainer id='contacto'>
             <RightDiv>
                 <h3>Encuentranos en nuestras redes sociales: </h3>
                 <IconsContainer>
-                    <IconLink href='https://www.instagram.com/kiautosdelsur/?utm_source=qr' target='_blank'><BsFacebook /></IconLink>
+                    <IconLink href='https://www.facebook.com/Kiautosdelsur-202812223666114/' target='_blank'><BsFacebook /></IconLink>
                     <IconLink href='https://www.instagram.com/kiautosdelsur/?utm_source=qr' target='_blank'><BsInstagram /></IconLink>
                 </IconsContainer>
             </RightDiv>

@@ -62,14 +62,23 @@ const ButtonDiv = styled.div `
     justify-content: center;
     
 `
-const CotizarButton = styled.button `
+const CotizarButton = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
     height: 40px;
+    color: white;
+    text-decoration: none;
     background-color: ${rojoOscuro};
     border: 1px solid ${rojoOscuro};
     border-radius: 30px;
     font-size: 18px;
     cursor: pointer;
+    &:hover{
+        background-color: ${rojoClaro};
+        border: 1px solid ${rojoClaro};
+    }
 `
 
 
@@ -93,7 +102,7 @@ export const Banner = () => {
         />
             </TypewriterContainer>
             <ButtonDiv>
-                <CotizarButton>Cotizar Ahora</CotizarButton>
+                <CotizarButton href='https://wa.me/message/X5C6UE5XOAC4O1?src=qr' target='_blank'>Cotizar Ahora</CotizarButton>
             </ButtonDiv>
         </VideoBannerContainer>
     </>
