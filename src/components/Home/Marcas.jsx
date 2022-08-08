@@ -5,6 +5,8 @@ import MarcaElement from './MarcaElement'
 import logoKia from '../../assets/marcas/logokia.png'
 import logoHyundai from '../../assets/marcas/hyundai.png'
 import logoChevrolet from '../../assets/marcas/chevrolet.png'
+import { JackInTheBox } from "react-awesome-reveal";
+
 const MarcasContainer = styled.section `
     display: flex;
     justify-content: center;
@@ -40,12 +42,20 @@ const ElementsContainer = styled.div `
 const Marcas = () => {
   return (
     <>
+    
+
       <MarcasContainer >
         <MarcasTitulo>Marcas que atendemos</MarcasTitulo>
         <ElementsContainer>
+        <JackInTheBox delay={100}>
             <MarcaElement urlImg={logoHyundai}/>
+        </JackInTheBox>
+        <JackInTheBox delay={100}>
             <MarcaElement urlImg={logoChevrolet}/>
+        </JackInTheBox>
+        <JackInTheBox delay={100}>
             <MarcaElement urlImg={logoKia}/>
+        </JackInTheBox>
         </ElementsContainer>
       </MarcasContainer>  
     </>

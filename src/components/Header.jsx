@@ -3,6 +3,7 @@ import { FaRegClock } from "react-icons/fa";
 import styled from 'styled-components';
 import { rojoOscuro } from '../assets/colors/Colors';
 
+
 export const HeaderContainer = styled.div`
     background-color: ${rojoOscuro};
     padding: 5px 5px;

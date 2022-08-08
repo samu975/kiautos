@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { FaTools } from 'react-icons/fa'
 import { blanco, gris, negro, rojoClaro, rojoOscuro } from '../../assets/colors/Colors'
-
+import { Bounce } from "react-awesome-reveal";
 const SectionContainer = styled.section`
     margin-top: -124px;
     width: 100%;
@@ -75,20 +75,24 @@ const Icon = styled(FaTools)`
 
 const InfoPrincipal = () => {
   return (
-    <>  <SectionContainer id='nosotros'>
-            <TarjetaContainer>
-            <TopContainer>
-                <IconContainer>
-                    <Icon />
-                </IconContainer>
-               
-                <Titulo>Distrubuidores de repuestos</Titulo>
-            </TopContainer>
-            <Texto>
-            Somos comercializadores de partes para vehículos Hyundai, Kia y Chevrolet. Contamos con un equipo de trabajo altamente capacitado para brindarte la mejor experiencia. Nos dedicamos a la comercialización de partes automotrices para vehículos livianos.
-            </Texto>
-            </TarjetaContainer>
-        </SectionContainer>
+
+    <>
+    <Bounce>
+        <SectionContainer id='nosotros'>
+                <TarjetaContainer>
+                <TopContainer>
+                    <IconContainer>
+                        <Icon />
+                    </IconContainer>
+                
+                    <Titulo>Distrubuidores de repuestos</Titulo>
+                </TopContainer>
+                <Texto>
+                Somos comercializadores de partes para vehículos Hyundai, Kia y Chevrolet. Contamos con un equipo de trabajo altamente capacitado para brindarte la mejor experiencia. Nos dedicamos a la comercialización de partes automotrices para vehículos livianos.
+                </Texto>
+                </TarjetaContainer>
+            </SectionContainer>
+    </Bounce>  
     </>
   )
 }

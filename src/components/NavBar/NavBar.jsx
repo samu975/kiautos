@@ -8,7 +8,6 @@ import { blanco, negro, rojoClaro } from '../../assets/colors/Colors';
 
 
 
-
 export const NavBarContainer = styled.div`
   width: 100%;
   height: 80px;
@@ -64,6 +63,7 @@ export const NavElement = styled(Link)`
   @media screen and (max-width: 960px) {
     text-align: center;
     color: ${blanco};
+    
   }
 
   

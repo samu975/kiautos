@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { Zoom } from 'react-awesome-reveal'
 const Containerimg = styled.div`
     justify-self: center;
     width: 150px;
@@ -24,11 +24,13 @@ const Containerimg = styled.div`
 
 const ProductItem = ({urlImg}) => {
   return (
-    <Containerimg>
-        <img src={urlImg}>
+    <Zoom>
+        <Containerimg>
+            <img src={urlImg}>
 
-        </img>
-    </Containerimg>
+            </img>
+        </Containerimg>
+    </Zoom>
   )
 }
 
